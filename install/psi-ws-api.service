@@ -1,0 +1,17 @@
+[Unit]
+Description=PSI webservice API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/psi-ws-api/bin
+ExecStart=/usr/local/psi-ws-api/bin/psi-ws-api --conf=/usr/local/psi-ws-api/conf/psi-ws-api.conf --port 9090
+
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+

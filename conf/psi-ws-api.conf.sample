@@ -1,0 +1,18 @@
+[
+    {
+        "URL":"/test",
+        "Run":"./test.sh",
+        "Desc":"Example configuration, do nothind"
+    },
+    {
+        "URL":"/date",
+        "Run":"./date.sh",
+        "Desc":"Runs date command"
+    },
+    {
+        "URL":"/args",
+        "Run":"./args.sh",
+        "Desc":"Runs script with argunments like 'key=val' in URL"
+    }
+]
+
